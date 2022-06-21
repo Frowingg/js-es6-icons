@@ -1,3 +1,4 @@
+const iconContainer = document.getElementById('icon_container');
 const data = 
 [
 	{
@@ -113,3 +114,20 @@ const data =
 		color: 'blue'
 	}
 ];
+
+data.forEach(icon => {
+    iconContainer.innerHTML += `
+    <div class="icon_card"> 
+        <i${createIconClass(icon)}> ${icon.name} </i> 
+    </div>
+    `
+
+});
+
+
+function createIconClass(icon){
+    // iconClass = icon.family + ' ' + icon.prefix;
+    iconClass = icon.prefix + icon.family;
+
+    console.log(iconClass)
+}
