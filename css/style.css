@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-size: 40px;
+    margin-left: 20px;
+    color: #29b1dd;
+}
+
+nav{
+    height: 80px;
+    background-color: #29b1dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav label{
+    color: white;
+    margin-right: 10px;
+}
+
+#icon_section{
+    background-color: #ddd;
+    height: calc(100vh - 160px);
+    width: 100%;
+    padding: 30px 0;
+}
+#icon_container{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.icon_card{
+    width: calc(100% / 5 - 30px);
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+}
