@@ -1,4 +1,5 @@
 const iconContainer = document.getElementById('icon_container');
+const userSelection = document.getElementById('type_select');
 const data = 
 [
 	{
@@ -118,11 +119,36 @@ const data =
 data.forEach(icon => {
     iconContainer.innerHTML += `
     <div class="icon_card"> 
-        <i${icon.prefix + icon.family} style=color:${icon.color}> ${icon.name} </i> 
+        <i class='icon ${icon.family + ' ' + icon.prefix+icon.name}' style=color:${icon.color}> <br> <span> ${icon.name.toUpperCase()} </span></i> 
     </div>
     `
 }
+);
+
+userSelection.addEventListener('change',
+    function showOnly() {
+        iconContainer.innerHTML = '';
+        const category = this.value;
+        if (category !== 'all') {
+            data.forEach(icon => {
+                if (icon.type === category) {
+                    iconContainer.innerHTML += `
+                        <div class="icon_card"> 
+                            <i class='icon ${icon.family + ' ' + icon.prefix+icon.name}' style=color:${icon.color}> <br> ${icon.name.toUpperCase()} </i> 
+                        </div>`
+                }
+            });
+        }
+        // if (category===1) {
+        //     iconContainer.innerHTML = '';
+        //     iconContainer.innerHTML = populateIconContainer('animal')  
+        // } else if (category===2) {
+        //     iconContainer.innerHTML = '';
+        //     iconContainer.innerHTML += populateIconContainer('vegetable') 
+        // } else if (category===3) {
+        //     iconContainer.innerHTML = '';
+        //     iconContainer.innerHTML += populateIconContainer('user')
+        // }
+    }
 )
-// const iconLink = document.getElementsByClassName(`${icon.prefix}${icon.family}`);
-//     iconLink.style.color = `${icon.color}`;
-// });
+
