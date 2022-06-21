@@ -45,4 +45,7 @@ nav label{
     height: 100px;
     background-color: white;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -118,16 +118,11 @@ const data =
 data.forEach(icon => {
     iconContainer.innerHTML += `
     <div class="icon_card"> 
-        <i${createIconClass(icon)}> ${icon.name} </i> 
+        <i${icon.prefix + icon.family} style=color:${icon.color}> ${icon.name} </i> 
     </div>
     `
-
-});
-
-
-function createIconClass(icon){
-    // iconClass = icon.family + ' ' + icon.prefix;
-    iconClass = icon.prefix + icon.family;
-
-    console.log(iconClass)
 }
+)
+// const iconLink = document.getElementsByClassName(`${icon.prefix}${icon.family}`);
+//     iconLink.style.color = `${icon.color}`;
+// });
