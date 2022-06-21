@@ -132,23 +132,15 @@ userSelection.addEventListener('change',
         if (category !== 'all') {
             data.forEach(icon => {
                 if (icon.type === category) {
+                    iconContainer.innerHTML += '';
                     iconContainer.innerHTML += `
-                        <div class="icon_card"> 
-                            <i class='icon ${icon.family + ' ' + icon.prefix+icon.name}' style=color:${icon.color}> <br> ${icon.name.toUpperCase()} </i> 
-                        </div>`
+                    <div class="icon_card"> 
+                        <i class='icon ${icon.family + ' ' + icon.prefix+icon.name}' style=color:${icon.color}> <br> <span> ${icon.name.toUpperCase()} </span></i> 
+                    </div>
+                    `;
                 }
             });
         }
-        // if (category===1) {
-        //     iconContainer.innerHTML = '';
-        //     iconContainer.innerHTML = populateIconContainer('animal')  
-        // } else if (category===2) {
-        //     iconContainer.innerHTML = '';
-        //     iconContainer.innerHTML += populateIconContainer('vegetable') 
-        // } else if (category===3) {
-        //     iconContainer.innerHTML = '';
-        //     iconContainer.innerHTML += populateIconContainer('user')
-        // }
     }
 )
 
