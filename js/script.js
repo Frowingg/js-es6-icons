@@ -1,5 +1,6 @@
 const iconContainer = document.getElementById('icon_container');
 const userSelection = document.getElementById('type_select');
+const categories = [];
 const data = 
 [
 	{
@@ -117,6 +118,9 @@ const data =
 ];
 
 data.forEach(icon => {
+    if (!categories.includes(icon.type)) {
+        categories.push(icon.type)
+    }
     iconContainer.innerHTML += `
     <div class="icon_card"> 
         <i class='icon ${icon.family + ' ' + icon.prefix+icon.name}' style=color:${icon.color}> <br> <span> ${icon.name.toUpperCase()} </span></i> 
@@ -124,6 +128,10 @@ data.forEach(icon => {
     `
 }
 );
+console.log(categories)
+categories.forEach(category => {
+    userSelection.innerHTML += `<option value="${category}">${category}</option>`;
+});
 
 userSelection.addEventListener('change',
     function showOnly() {
