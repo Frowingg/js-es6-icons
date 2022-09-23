@@ -20,7 +20,6 @@ const data =
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		// color: 'orange'
         color: '#'+generateRandomString(6)
     },
 	{
@@ -28,7 +27,6 @@ const data =
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		// color: 'orange'
         color: '#'+generateRandomString(6)
     },
 	{
@@ -36,7 +34,6 @@ const data =
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		// color: 'orange'
         color: '#'+generateRandomString(6)
     },
 	{
@@ -44,7 +41,6 @@ const data =
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		// color: 'orange'
         color: '#'+generateRandomString(6)
     },
 	{
@@ -52,7 +48,6 @@ const data =
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		// color: 'orange'
         color: '#'+generateRandomString(6)
     },
 	{
@@ -60,7 +55,6 @@ const data =
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		// color: 'orange'
         color: '#'+generateRandomString(6)
     },
 	{
@@ -68,7 +62,6 @@ const data =
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		// color: 'orange'
         color: '#'+generateRandomString(6)
     },
 	{
@@ -76,7 +69,6 @@ const data =
 		prefix: 'fa-',
 		type: 'animal',
 		family: 'fas',
-		// color: 'orange'
         color: '#'+generateRandomString(6)
     },
 	{
@@ -84,7 +76,6 @@ const data =
 		prefix: 'fa-',
 		type: 'vegetable',
 		family: 'fas',
-		// color: 'green'
 	    color: '#'+generateRandomString(6)
     },
 	{
@@ -92,7 +83,6 @@ const data =
 		prefix: 'fa-',
 		type: 'vegetable',
 		family: 'fas',
-		// color: 'green'
 	    color: '#'+generateRandomString(6)
     },
 	{
@@ -100,7 +90,6 @@ const data =
 		prefix: 'fa-',
 		type: 'vegetable',
 		family: 'fas',
-		// color: 'green'
 	    color: '#'+generateRandomString(6)
     },
 	{
@@ -108,7 +97,6 @@ const data =
 		prefix: 'fa-',
 		type: 'vegetable',
 		family: 'fas',
-		// color: 'green'
 	    color: '#'+generateRandomString(6)
     },
 	{
@@ -116,7 +104,6 @@ const data =
 		prefix: 'fa-',
 		type: 'user',
 		family: 'fas',
-		// color: 'blue'
         color: '#'+generateRandomString(6)
 	},
     {
@@ -124,7 +111,6 @@ const data =
 		prefix: 'fa-',
 		type: 'user',
 		family: 'fas',
-		// color: 'blue'
         color: '#'+generateRandomString(6)
 	},
     {
@@ -132,7 +118,6 @@ const data =
 		prefix: 'fa-',
 		type: 'user',
 		family: 'fas',
-		// color: 'blue'
         color: '#'+generateRandomString(6)
 	},    
     {
@@ -140,7 +125,6 @@ const data =
 		prefix: 'fa-',
 		type: 'user',
 		family: 'fas',
-		// color: 'blue'
         color: '#'+generateRandomString(6)
 	}
 ];
